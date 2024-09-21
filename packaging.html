@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="controls.css">
+
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="gsap/1.16.1/TweenLite.min.js"></script>
+    <script src="gsap/1.16.1/Draggable.min.js"></script>
+    <script src="gsap/1.16.1/CSSPlugin.min.js"></script>
+    <script scr="jquery.ui.touch-punch.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="header2">
+    <div class="container">
+        <nav>
+            <p><a href="index.html"><img src="images/lucylogonosquigges.svg" style="width:300px" class='logo'alt="logo"></a></p>
+            <ul id="sidemenu">
+                <div class="sidemenu-style">
+                <li><a href="index.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li> 
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </div>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+
+            <div class= "lucytext">Packaging</div>
+            <h2> Work With Me! </h2>
+           
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- -----------about me---------- -->
+<div id="about">
+    <div class="container">
+
+        
+     
+            <div class="about-col-2">
+             <h1 class="sub-title">Packaging Design</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Service')">Service</p>
+                    <p class="tab-links" onclick="opentab('Examples')">Examples</p>
+                    <p class="tab-links" onclick="opentab('Reviews')">Reviews</p>
+                </div>
+
+
+                
+
+                <div class="tab-contents active-tab" id="Service">
+                    <ul>
+                        <li>I specialize in creating innovative and visually captivating packaging designs 
+                            that not only protect your products but also enhance brand identity and engage consumers. Our comprehensive 
+                            packaging design service combines creativity with functionality, ensuring your packaging stands out on the 
+                            shelves and resonates with your target audience.</li>
+
+                        <li><span>Custom Packaging Solutions</span>
+                        <br> - I understand that every product is unique. My team works closely with you to develop tailored packaging 
+                        solutions that reflect your brand’s essence and meet specific requirements. </li>
+                        
+                        <li><span>Creative Design Process</span><br>- I will observe the latest design trends, colors, 
+                            typography, and graphics to craft packaging that captures attention. I prioritize user experience, ensuring
+                             that the design is not only attractive but also intuitive for consumers.</li>
+
+                        <li><span>Prototyping and Mockups</span><br>- I provide prototype and mockup options that allow clients to 
+                            visualize their packaging before final production. This step ensures the design aligns with expectations 
+                            and functions as intended.</li>
+                        
+                        <li><span>Compliance and Regulations</span>
+                        <br> - Navigating packaging regulations can be complex. I stay updated on industry standards and ensures 
+                        your packaging complies with necessary guidelines, including labeling and safety requirements</li>
+
+                        <li><br>My packaging design service is suitable for businesses across various industries, including food and beverage, 
+                            cosmetics, electronics, textiles, and more. Whether you’re a startup looking to establish your brand identity or an 
+                            established business seeking a packaging refresh, I cater to all needs!</li>
+                    </ul>
+                        
+                
+                </div>
+
+                <div class="tab-contents" id="Examples">
+                    <a href="personalbrandingproject.html">
+                        <div class="exampleslist">
+                            Personal Branding Project
+                        </div>
+                    </a> 
+
+                    <a href="libraryproject.html">
+                        <div class="exampleslist3">
+                            Library Branding Project
+                        </div>
+                    </a>
+                </div>
+             
+                <div class="tab-contents" id="Reviews">
+                  
+                </div>
+
+               
+            </div>
+          
+
+     </div>
+</div>
+
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+
+        <div class="row">
+         <div class="contact-left">
+
+                <h1 class="sub-title">Say Hi!</h1>
+                <h2 class="sub-title2">Let's collaborate!</h2>
+
+            <div class="info"></div>
+                <h3><i class="fas fa-paper-plane"></i>lucyjane.design1@gmail.com </h3>
+                <br>
+
+                <div class="links">
+                <h3><a href="https://www.instagram.com/lucyjane.design/">Instagram</a></h3>
+                <h3><a href="https://www.linkedin.com/in/lucy-jane-design/">Linkedin</a></h3>
+                </div>
+
+                <div class="intro-video"> <video width="200px" autoplay muted loop>
+                  <source src="images/end 2.mov" type="video/mp4">
+                </video>
+                </div>
+                
+         </div>
+        
+         <div class="contact-right">
+            <form action="https://formsubmit.co/lucyjane.design1@gmail.com" method="POST">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <input type="text" name="name" placeholder="Name">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send</button>
+            </form>
+         </div>
+        </div>
+      </div>
+
+      
+      
+    <div class="copyright">
+        <p>Copyright © Lucy Jane Design.</p>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--Java-->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

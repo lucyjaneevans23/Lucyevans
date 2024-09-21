@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="controls.css">
+
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="gsap/1.16.1/TweenLite.min.js"></script>
+    <script src="gsap/1.16.1/Draggable.min.js"></script>
+    <script src="gsap/1.16.1/CSSPlugin.min.js"></script>
+    <script scr="jquery.ui.touch-punch.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <p><a href="index.html"><img src="images/lucylogonosquigges.svg" style="width:300px" class='logo'alt="logo"></a></p>
+            <ul id="sidemenu">
+                <div class="sidemenu-style">
+                <li><a href="#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li> 
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </div>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+        
+            <h1> Hi, I'm </h1>
+            <div class= "lucytext"> Lucy!</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- -----------about me---------- -->
+<div id="about">
+    <div class="container">
+
+        
+        
+        <div class="row">
+            <div class="about-col-1">
+                <div class="lucypic">
+                <img src="images/Lucy.JPG">
+                </div>
+            </div>
+            
+            <div class="about-col-2">
+             <h1 class="sub-title">About Me</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('about-me')">Bio</p>
+                    <p class="tab-links" onclick="opentab('Expertise')">Expertise</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+
+
+                <div class="bio">
+                 <div class="tab-contents active-tab" id="about-me">
+                    <ul>
+                        Hello! I'm Lucy, a passionate Creative Media student and Designer. 
+                        With a strong focus on graphic design, I possess a diverse skill set 
+                        that spans the creative tech industry. My experience in both design and development
+                        empowers me to navigate the various stages of product creation independently. 
+                        I excel in graphics and branding, illustration, motion design, web design and development, 
+                        as well as video and photo editing. My goal is to bring innovative ideas to life through a blend 
+                        of creativity and technical expertise!
+                        <div class="intro-video2"> <video width="460px" autoplay muted loop>
+                            <source src="images/Comp 3.mov" type="video/mp4">
+                          </video>
+                          </div>
+                  
+                    </ul>
+                 </div>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Software</span><br>Adobe Illustrator <br> Adobe Photoshop <br> Adobe InDesign <br> Adobe Premier Pro <br> Adobe After Affects <br> HTML <br> CSS <br> JavaScript <br> Visual Studio Code <br> Cinema 4D <br> Microsoft Office </li>
+                        <li><span>Personal and Techical Skills</span><br> Drawing & Illustration <br> Design <br> Product Development <br> Idea Generation <br> Team Work <br> Presentations </li>
+                     </ul>
+                </div>
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span> 2019 - Current</span>&nbsp;&nbsp;Freelance Graphic Design<br>I specialize in creating visually compelling designs
+                            that effectively communicate my clients' messages and enhance their brand identity. My expertise encompasses 
+                            a diverse range of projects including logo design, marketing materials and social media graphics. I have a 
+                            strong command of design software such as Adobe Creative Suite. My passion for creativity and commitment to 
+                            delivering high-quality results make me a valuable partner for businesses looking to elevate their visual presence.</li>
+                        <li><span>Social 7, 2019 - 2021</span> Social Media Content Creation<br> Creating and developing engaging digital 
+                            content that captured the essence of the venue and it's atmosphere. My role involved crafting and managing 
+                            advertising content for their Instagram and print-based advertisments to events.</li>
+                        <li><span>Neal's Yard Remedies, 2020 - 2024 </span>Skincare Specialist<br>At Neal's Yard Remedies, 
+                            I had the opportunity to immerse myself in the world of herbal skincare and holistic wellness. 
+                            My role involved providing personalized consultations to customers, helping them discover products 
+                            that suited their individual needs while promoting the benefits of natural ingredients.</li>
+                        <li><span>Lullabellz Hair, 2024 - Current</span><br>Tik Tok Associate & Content Creator<br> In my current position at Lullabellz, 
+                            I serve as a TikTok presenter, engaging audiences through live sessions that highlight our diverse range of products and drive
+                            sales. Additionally, I develop and manage social media content for TikTok, including the creation, editing, and promotion of 
+                            advertising videos. Staying attuned to the latest industry trends is essential in my role, as I consistently incorporate these
+                            insights into my content strategy to maximize engagement and effectiveness.</li>
+                    </ul>
+                </div>
+             
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <div class="education-list">
+                        <li><span>Leeds Beckett University (2024)</span><br>BSc Creative Media Technology (TBD) <br> Through my degree, I acquired a diverse set of skills
+                            relevant to various aspects of the creative and media industries, with a strong emphasis on content creation.I refined my existing graphic design
+                            skills while actively exploring other facets of the field, including 3D animation, web design and coding, video post-production, and motion graphics.</li>
+                        <li><span>Oldham Sixth Form (2019)</span><br>During my A-levels, I deeply immersed myself in my creative pursuits, exploring a wide array of opportunities
+                            within the creative and media landscape. Achieving results of: A, B, B, B.<br><br> AL Graphic Design <br> AL Media<br> AL Fine art <br> AS 3D Design </li>
+                        <li><span>Manchester Creative Studio (2017)</span> <br> My search for creativity began in High School, picking choices that I belived would best enhance my 
+                            creative & digital skills. I achiveved 9 GCSES in total, including Maths & English.<br><br> GCSE Graphic Design <br> GCSE Media <br> GCSE Computer Science <br> GCSE Fine Art <br></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Expertise">
+                    <ul>
+                        <li><span>Graphic Design</span><br>Branding & Visual Identity<br> Advertising <br> Print Design <br> Digital Graphics <br> Packaging Design</li>
+                        <li><span>Motion Design</span><br> Animation <br> Advertising <br> Infographics </li>
+                        <li><span>Illustration</span><br> Traditional Illustration <br> Digital Illustration</li>
+                        <li><span>Web Design</span><br> Programming <br> Websites </li>
+                        <li><span>Media Production</span><br> Photo Editing <br> Video Editing </li>
+                    </ul>
+                </div>
+
+            </div>
+         </div>     
+
+     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+     <div class="container">
+
+        <h1 class="sub-title">Projects</h1>
+         <div class="work-list">
+            <div class="work">
+             <img src="images/albumcampaignicon.png">
+              <div class="layer">
+               
+                    <h3>Album Project</h3>
+                    <p>An album campaign project, creating an album cover, merchandise & posters.</p>
+                    <br>
+                    <a href="albumcampaignproject.html" class="learn-more">Learn more</a>
+              
+             </div>
+            </div>
+
+            <div class="work">
+                <img src="images/leaflet.png">
+                <div class="layer">
+                    <h3>Branding Project</h3>
+                    <p>A re-branding project for Leeds City Library. Logo Design, Merchandise & Posters.</p>
+                    <br>
+                    <a href="libraryproject.html" class="learn-more">Learn more</a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/childrensbook.png">
+                <div class="layer">
+                    <h3>Book Project</h3>
+                    <p>A childrens book, creating an engaging story for young readers.</p>
+                    <br>
+                    <a href="childrensbook.html" class="learn-more">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="portfolio.html" class="btn"> See More</a>
+
+        
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Branding</h2>
+                <p>Transform your Brand's Identity! Establish a strong visual identity and communicate your 
+                    unique value proposition to the world.</p>
+                <a href="branding.html">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Logo Design</h2>
+                <p>Establish a unique, identifiable and memorable Logo for your brand.</p>
+                <a href="logodesign.html">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Packaging</h2>
+                <p>Bring your brand to life, and really get the word 'out there' about your service through Creative Merchandise design! </p>
+                <a href="packaging.html">Learn more</a>
+            </div>
+
+        </div>
+        <a href="services.html" class="btn">See more</a>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+
+        <div class="row">
+         <div class="contact-left">
+
+                <h1 class="sub-title">Say Hi!</h1>
+                <h2 class="sub-title2">Let's collaborate!</h2>
+
+            <div class="info"></div>
+                <h3><i class="fas fa-paper-plane"></i>lucyjane.design1@gmail.com </h3>
+                <br>
+
+                <div class="links">
+                <h3><a href="https://www.instagram.com/lucyjane.design/">Instagram</a></h3>
+                <h3><a href="https://www.linkedin.com/in/lucy-jane-design/">Linkedin</a></h3>
+                </div>
+
+                <div class="intro-video"> <video width="200px" autoplay muted loop>
+                  <source src="images/end 2.mov" type="video/mp4">
+                </video>
+                </div>
+                
+         </div>
+        
+         <div class="contact-right">
+            <form action="https://formsubmit.co/lucyjane.design1@gmail.com" method="POST">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <input type="text" name="name" placeholder="Name">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send</button>
+            </form>
+         </div>
+        </div>
+      </div>
+
+      
+      
+    <div class="copyright">
+        <p>Copyright © Lucy Jane Design.</p>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--Java-->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

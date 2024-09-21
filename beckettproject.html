@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Beckett Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="controls.css">
+
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="gsap/1.16.1/TweenLite.min.js"></script>
+    <script src="gsap/1.16.1/Draggable.min.js"></script>
+    <script src="gsap/1.16.1/CSSPlugin.min.js"></script>
+    <script scr="jquery.ui.touch-punch.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <p><a href="index.html"><img src="images/lucylogonosquigges.svg" style="width:300px" class='logo'alt="logo"></a></p>
+            <ul id="sidemenu">
+                <li><a href="index.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+        
+            <h1> Leeds Beckett</h1>
+            <div class= "lucytext"> University</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ----------portfolio------------ -->
+
+
+    <div class="container2">
+        <div class="heading-library-project">Motion Graphics | Graphic Design | Web Design</div>
+        <div class="heading-library-project2">Leeds Beckett University  </div>
+        <div class="heading-year-project">2024</div>
+
+        <div class="text-box5">   
+            <br>
+            Infographic
+        </div>
+       <div class="video-border">
+        <div class="video1">
+            <video width="800px" autoplay muted loop>
+            <source src="images/CMITInfographic copy.mp4" type="video/mp4">
+            </video>
+        </div>
+       </div>
+
+
+            <div class="text-box"> For this project, I was tasked with creating refreshing 
+                a study skills resource for Leeds Beckett University. The goal was to expand 
+                the brand's online resources and create a cohesive visual language across 
+                digital platforms. The outcomes were a quiz and a infographic with the
+                aim of helping students in their studies. This project was built using educational theory
+                as a basis.
+            </div>
+
+            <div class="text-box5">   
+                <br>
+                Interractive Quiz
+            </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/web1.png">
+                        <h3>Web 1</h3>
+                </div>
+                <div class="work">
+                    <img src="images/web2.png">
+                        <h3>Web 2</h3>
+
+                </div>
+                <div class="work">
+                    <img src="images/web3.png">
+                        <h3>Web3</h3>
+                </div>
+
+            </div>
+
+
+            <div class="text-box"> 
+                
+
+                For the motion graphics component of this project, 
+                I designed a 60-second animation that explains the topic of Harvard Referencing. 
+                The animations features were all designed seperately, by me, and 
+                brought together in an animation. The animation is designed to be 
+                flexible and can be used as a standalone video or incorporated 
+                into social media posts and website intro sequences.
+                
+                <br><br>
+                
+                The web design outcome is a responsive quiz tests the user on the information
+                showcased in the infographic. The web component and video were designed to be 
+                cohsive with one another and using the existing brand guidelines. 
+                The Webpage includes animation, interractive features and delivers an outcome to the user.
+
+                <br><br>
+
+                Technical Details:
+                
+                HTML, CSS & JavaScript.
+                Adobe Creative Suite (Photoshop, Illustrator, After Effects).
+                Digital Graphics and illustration techniques.
+            </div>
+
+    </div>
+
+
+
+
+<!-- ----------contact------------- -->
+
+
+<div id="contact">
+    <div class="container">
+
+        <div class="row">
+         <div class="contact-left">
+
+                <h1 class="sub-title">Say Hi!</h1>
+                <h2 class="sub-title2">Let's collaborate!</h2>
+
+            <div class="info"></div>
+                <h3><i class="fas fa-paper-plane"></i>lucyjane.design1@gmail.com </h3>
+                <br>
+
+                <div class="links">
+                <h3><a href="https://www.instagram.com/lucyjane.design/">Instagram</a></h3>
+                <h3><a href="https://www.linkedin.com/in/lucy-jane-design/">Linkedin</a></h3>
+                </div>
+
+                <div class="intro-video"> <video width="200px" autoplay muted loop>
+                  <source src="images/end 2.mov" type="video/mp4">
+                </video>
+                </div>
+                
+         </div>
+        
+         <div class="contact-right">
+            <form action="https://formsubmit.co/lucyjane.design1@gmail.com" method="POST">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <input type="text" name="name" placeholder="Name">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send</button>
+            </form>
+         </div>
+        </div>
+      </div>
+
+      
+      
+    <div class="copyright">
+        <p>Copyright © Lucy Jane Design.</p>
+
+    </div>
+</div>
+
+<!--Java-->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="controls.css">
+
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="gsap/1.16.1/TweenLite.min.js"></script>
+    <script src="gsap/1.16.1/Draggable.min.js"></script>
+    <script src="gsap/1.16.1/CSSPlugin.min.js"></script>
+    <script scr="jquery.ui.touch-punch.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="header2">
+    <div class="container">
+        <nav>
+            <p><a href="index.html"><img src="images/lucylogonosquigges.svg" style="width:300px" class='logo'alt="logo"></a></p>
+            <ul id="sidemenu">
+                <div class="sidemenu-style">
+                <li><a href="index.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li> 
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </div>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+
+            <div class= "lucytext"> Website</div>
+            <h2> Work With Me! </h2>
+           
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- -----------about me---------- -->
+<div id="about">
+    <div class="container">
+
+        
+     
+            <div class="about-col-2">
+             <h1 class="sub-title">Web Design</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Service')">Service</p>
+                    <p class="tab-links" onclick="opentab('Examples')">Examples</p>
+                    <p class="tab-links" onclick="opentab('Reviews')">Reviews</p>
+                </div>
+
+
+                
+
+                <div class="tab-contents active-tab" id="Service">
+                    <ul>
+                        <li>I can create user-friendly websites tailored to meet your business goals.
+                            My web design service combines aesthetics, functionality, and the latest technology trends to deliver an exceptional 
+                            online presence that engages visitors and drives conversions.</li>
+
+                        <li><span>Custom Website Design</span>
+                        <br> - I develop unique designs that reflect your brand identity, ensuring your website stands out in a crowded digital 
+                        landscape. <br>
+                        - My design process prioritizes user experience (UX), ensuring intuitive navigation and seamless interactions.</li>
+                        
+                        <li><span>Responsive Design</span><br>- My websites are designed to be fully responsive, providing a seamless experience 
+                            across desktops, tablets, and mobile devices.<br>
+                            - We ensure your site looks great and functions flawlessly on any screen size.</li>
+                   
+                        <li><span>Website Maintenance and Support</span>
+                        <br> - After launch, I offer ongoing maintenance services to keep your website updated, secure, and running smoothly.
+                        Our support team is always available to address any issues or answer questions, ensuring peace of mind for our clients.</li>
+                    </ul>
+                        
+                
+                </div>
+
+                <div class="tab-contents" id="Examples">
+                    <a href="personalbrandingproject.html">
+                        <div class="exampleslist">
+                            Personal Branding Project
+                        </div>
+                    </a> 
+
+                    <a href="dinsploreproject.html">
+                        <div class="exampleslist3">
+                           Dinosplore Project
+                        </div>
+                    </a>
+
+                    <a href="beckettproject.html">
+                    <div class="exampleslist2">
+                      Leeds Beckett University Project
+                    </div>
+                </div>
+             
+                <div class="tab-contents" id="Reviews">
+                   
+                </div>
+
+                 
+            </div>
+          
+
+     </div>
+</div>
+
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+
+        <div class="row">
+         <div class="contact-left">
+
+                <h1 class="sub-title">Say Hi!</h1>
+                <h2 class="sub-title2">Let's collaborate!</h2>
+
+            <div class="info"></div>
+                <h3><i class="fas fa-paper-plane"></i>lucyjane.design1@gmail.com </h3>
+                <br>
+
+                <div class="links">
+                <h3><a href="https://www.instagram.com/lucyjane.design/">Instagram</a></h3>
+                <h3><a href="https://www.linkedin.com/in/lucy-jane-design/">Linkedin</a></h3>
+                </div>
+
+                <div class="intro-video"> <video width="200px" autoplay muted loop>
+                  <source src="images/end 2.mov" type="video/mp4">
+                </video>
+                </div>
+                
+         </div>
+        
+         <div class="contact-right">
+            <form action="https://formsubmit.co/lucyjane.design1@gmail.com" method="POST">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <input type="text" name="name" placeholder="Name">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send</button>
+            </form>
+         </div>
+        </div>
+      </div>
+
+      
+      
+    <div class="copyright">
+        <p>Copyright © Lucy Jane Design.</p>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--Java-->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

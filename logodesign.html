@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="controls.css">
+
+    <script src="jquery-1.11.2.min.js"></script>
+    <script src="gsap/1.16.1/TweenLite.min.js"></script>
+    <script src="gsap/1.16.1/Draggable.min.js"></script>
+    <script src="gsap/1.16.1/CSSPlugin.min.js"></script>
+    <script scr="jquery.ui.touch-punch.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="header2">
+    <div class="container">
+        <nav>
+            <p><a href="index.html"><img src="images/lucylogonosquigges.svg" style="width:300px" class='logo'alt="logo"></a></p>
+            <ul id="sidemenu">
+                <div class="sidemenu-style">
+                <li><a href="index.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li> 
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </div>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+
+            <div class= "lucytext"> Logo</div>
+            <h2> Work With Me!</h2>
+           
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- -----------about me---------- -->
+<div id="about">
+    <div class="container">
+
+        
+     
+            <div class="about-col-2">
+             <h1 class="sub-title">Logo Design</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Service')">Service</p>
+                    <p class="tab-links" onclick="opentab('Examples')">Examples</p>
+                    <p class="tab-links" onclick="opentab('Reviews')">Reviews</p>
+                </div>
+
+
+                
+
+                <div class="tab-contents active-tab" id="Service">
+                    <ul>
+                        <li>I specialize in crafting unique and memorable logos that encapsulate your brand's identity and values. 
+                            My logo design service is dedicated to providing businesses and individuals with visually compelling 
+                            designs that stand out in today’s competitive marketplace.</li>
+
+                        <li><span> Personalised Consultation</span>
+                        <br> - I begin with understanding your vision, goals, and target audience through detailed consultations. 
+                        This allows us to tailor the design process to your specific needs.</li>
+                        
+                        <li><span>Creative Concept Development</span>
+                        <br>- I will brainstorm and develop multiple logo concepts that reflect your 
+                        brand's essence. I focus on creativity and originality to ensure your logo is one-of-a-kind.
+                        </li>
+                        
+                        <li><span>Versatile Designs</span>
+                        <br> -  I craft logos that are versatile enough for various applications, 
+                        from business cards and websites to merchandise and social media. 
+                        My designs look great in both color and monochrome, ensuring your brand stays consistent across all platforms.</li>
+
+                        <li><span>Feedback Intergration</span>
+                            <br> - I value your input throughout the design process. You will receive drafts and revisions based on your 
+                            feedback, allowing for collaborative adjustments until we achieve the perfect design.</li>
+
+                        <li><span>Final Development</span>
+                                <br> - Once the design is finalized, you’ll receive all the necessary files in various formats, including vector
+                                 files (AI, EPS), high-resolution raster files (PNG, JPG), and any other formats you may need</li>
+                        
+                         <li><span>Guidelines</span>
+                            <br> - To help you maintain consistency, I can provide a brand style guide that includes color palettes, typography, 
+                            and usage guidelines for your logo.</li>
+
+                        <li>You can expect a seamless, professional experience coupled with exceptional creativity and attention to detail. 
+                            Let's bring your brand to life with a stunning logo that tells your unique story. Contact me today to start your 
+                            logo design journey!</li>
+                    </ul>
+                        
+                
+                </div>
+
+                <div class="tab-contents" id="Examples">
+                    <a href="personalbrandingproject.html">
+                        <div class="exampleslist">
+                            Personal Branding Project
+                        </div>
+                    </a> 
+
+                    <a href="libraryproject.html">
+                        <div class="exampleslist3">
+                            Library Branding Project
+                        </div>
+                    </a>
+
+                    <a href="dinsploreproject.html">
+                    <div class="exampleslist2">
+                       Dinosplore Project
+                    </div>
+                </div>
+             
+                <div class="tab-contents" id="Reviews">
+                  
+                </div>
+            </div>
+          
+
+     </div>
+</div>
+
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+
+        <div class="row">
+         <div class="contact-left">
+
+                <h1 class="sub-title">Say Hi!</h1>
+                <h2 class="sub-title2">Let's collaborate!</h2>
+
+            <div class="info"></div>
+                <h3><i class="fas fa-paper-plane"></i>lucyjane.design1@gmail.com </h3>
+                <br>
+
+                <div class="links">
+                <h3><a href="https://www.instagram.com/lucyjane.design/">Instagram</a></h3>
+                <h3><a href="https://www.linkedin.com/in/lucy-jane-design/">Linkedin</a></h3>
+                </div>
+
+                <div class="intro-video"> <video width="200px" autoplay muted loop>
+                  <source src="images/end 2.mov" type="video/mp4">
+                </video>
+                </div>
+                
+         </div>
+        
+         <div class="contact-right">
+            <form action="https://formsubmit.co/lucyjane.design1@gmail.com" method="POST">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <input type="text" name="name" placeholder="Name">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send</button>
+            </form>
+         </div>
+        </div>
+      </div>
+
+      
+      
+    <div class="copyright">
+        <p>Copyright © Lucy Jane Design.</p>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--Java-->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
